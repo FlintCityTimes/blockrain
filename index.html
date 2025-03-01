@@ -13,18 +13,9 @@
   <link rel="stylesheet" href="https://flintcitytimes.github.io/blockrain/blockrain.css">
 </head>
 <body>
-  <section id="hero" style="min-height:600px; height:auto;">
-    <div class="welcome">
-      <h1>Flint City Times Tetris</h1>
-      <p>Enjoy a classic game of Tetris, right here on Flint City Times!</p>
-      <div class="game" id="cover-tetris"></div>
-    </div>
-  </section>
-
   <div class="game" style="width:250px; height:500px;"></div>
 
   <footer id="footer">
-    <p>&copy; 2025 Flint City Times. All rights reserved.</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -35,12 +26,12 @@
   
   <script>
     $('#cover-tetris').blockrain({
-      autoplay: false,
+      autoplay: true,
       autoplayRestart: false,
       speed: 100,
       autoBlockWidth: true,
       autoBlockSize: 25,
-      theme: 'candy'
+      theme: 'gameboy'
     });
   </script>
 </body>
