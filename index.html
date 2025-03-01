@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png">
   <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="src/blockrain.css">
+  <link rel="stylesheet" href="blockrain.css">
 </head>
 <body>
   <section id="hero" style="min-height:600px; height:auto;">
@@ -25,10 +25,11 @@
     <p>&copy; 2025 Flint City Times. All rights reserved.</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="src/blockrain.jquery.libs.js"></script>
-  <script src="src/blockrain.jquery.src.js"></script>
-  <script src="src/blockrain.jquery.themes.js"></script>
+  <script src="jquery.js"></script>
+  <script src="blockrain.js"></script>
+  <script>
+      $('.game').blockrain();
+  </script>
   
   <script>
     $('#cover-tetris').blockrain({
