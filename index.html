@@ -6,33 +6,35 @@
   <meta name="description" content="Play the classic Tetris game on Flint City Times" />
   <meta name="keywords" content="Flint City Times, Tetris, game, HTML5, Javascript" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
-  
 
   <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://flintcitytimes.github.io/blockrain/blockrain.css">
+
+  <style>
+    /* Game container */
+    .game {
+      width: 250px;
+      height: 500px;
+      margin: auto;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="game" style="width:250px; height:500px;"></div>
-
-  <footer id="footer">
-  </footer>
+  <div class="game"></div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://flintcitytimes.github.io/blockrain/blockrain.jquery.js"></script>
   <script>
-      $('.game').blockrain();
-  </script>
-  
-  <script>
-  $('#cover-tetris').blockrain({
-  autoplay: true,
-  autoplayRestart: false,
-  speed: 100,
-  autoBlockWidth: true,
-  autoBlockSize: 25,
-  theme: 'gameboy'
-});
+    $(document).ready(function () {
+      $('.game').blockrain({
+        autoplay: false,  // Set to true if you want auto-playing mode
+        theme: 'modern',  // Try 'retro', 'gameboy', or 'monochrome' for different styles
+        playText: 'Play Now',
+        gameOverText: 'Game Over!',
+        restartButtonText: 'Restart'
+      });
+    });
   </script>
 </body>
 </html>
