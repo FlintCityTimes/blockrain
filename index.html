@@ -16,6 +16,7 @@
       width: 250px;
       height: 500px;
       margin: auto;
+      align-self: center ;
       text-align: center;
     }
   </style>
@@ -28,8 +29,8 @@
   <script>
     $(document).ready(function () {
       $('.game').blockrain({
-        autoplay: false,  // Set to true if you want auto-playing mode
-        theme: 'modern',  // Try 'retro', 'gameboy', or 'monochrome' for different styles
+        autoplay: true,  // Set to true if you want auto-playing mode
+        theme: 'gameboy',  // Try 'retro', 'gameboy', or 'monochrome' for different styles
         playText: 'Play Now',
         gameOverText: 'Game Over!',
         restartButtonText: 'Restart'
