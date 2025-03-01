@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockRain Tetris</title>
+
+    <!-- Add BlockRain CSS -->
+    <link rel="stylesheet" href="blockrain.css">
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add BlockRain JS -->
+    <script src="jquery.blockrain.min.js"></script>
+
+    <style>
+        body { text-align: center; }
+        #game-container { width: 320px; height: 480px; margin: auto; }
+    </style>
+</head>
+<body>
+
+    <div id="game-container"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('#game-container').blockrain({
+                theme: 'modern',
+                playText: 'Play Tetris!',
+                scoreText: 'Score'
+            });
+        });
+    </script>
+
+</body>
+</html>
